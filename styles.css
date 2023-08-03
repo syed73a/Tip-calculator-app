@@ -31,7 +31,7 @@ input {
 .flex-row {
   display: flex;
   justify-content: space-between;
-}
+   align-items: center;}
 
 .btn-sml {
   font-size: 2.4rem;
@@ -200,6 +200,20 @@ span {
 }
 
 @media only screen and (min-width: 900px) {
+ .flex-col {
+    margin-bottom: 4rem;
+    gap: 0.6rem;
+  }
+
+  .tip.flex-col {
+    gap: 2rem;
+  }
+
+  .people.flex-col {
+    margin-bottom: 2.5rem;
+  }
+
+  
   .logo {
     top: 6rem;
   }
@@ -220,10 +234,16 @@ span {
 
   .tip__container {
     grid-template-columns: repeat(3, 1fr);
+     gap: 1.6rem;
+  }
+
+   .result {
+    padding: 4rem;
   }
 
   .result__container {
-    margin-bottom: 14.5rem;
+    margin-top:0rem;
+    margin-bottom: 12.5rem;
   }
    .tip-amount__value,
   .bill-amount__value {
