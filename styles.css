@@ -217,6 +217,10 @@ span {
   .result__container {
     margin-bottom: 14.5rem;
   }
+   .tip-amount__value,
+  .bill-amount__value {
+    font-size: 4.8rem;
+  }
 }
 
 /* -------------------------------*/
