@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <img src="/images/logo.svg" alt="Company Logo" class="logo" />
+    </header>
+
+    <main>
+      <section class="data">
+        <div class="bill flex-col">
+          <label for="bill__value" class="bill__title">Bill:</label>
+          <div class="bill__container">
+            <i class="fa fa-usd icon"></i>
+            <input
+              type="number"
+              id="bill__value"
+              class="bill__input"
+              placeholder="0"
+            />
+          </div>
+        </div>
+
+        <div class="tip flex-col">
+          <label for="tip__value" class="tip__title">Select Tip %</label>
+          <div class="tip__container">
+            <button class="tip__percent btn-sml js-tip__percent">5%</button>
+            <button class="tip__percent btn-sml js-tip__percent">10%</button>
+            <button class="tip__percent btn-sml js-tip__percent">15%</button>
+            <button class="tip__percent btn-sml js-tip__percent">25%</button>
+            <button class="tip__percent btn-sml js-tip__percent">50%</button>
+            <div>
+              <input
+                type="text"
+                id="custom__input"
+                class="tip__custom btn-sml js-tip__custom"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="people flex-col">
+          <div class="error__message flex-row">
+            <label for="people__number" class="people__title"
+              >No of People</label
+            >
+            <small class="error-message">Enter No of people</small>
+          </div>
+          <div class="people__container">
+            <i class="fa fa-user icon"></i>
+
+            <input
+              type="number"
+              id="people__number"
+              class="people__input"
+              placeholder="0"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="result">
+        <div class="result__container">
+          <div class="tip-amount__container flex-row">
+            <p class="tip-amount__title">
+              Tip Amount <br /><span>/Person</span>
+            </p>
+            <p class="tip-amount__value">$0.0</p>
+          </div>
+          <div class="bill-amount__container flex-row">
+            <p class="bill-amount__title">Bill <br /><span>/Person</span></p>
+            <p class="bill-amount__value">$0.0</p>
+          </div>
+        </div>
+        <div class="result__container-cta">
+          <button class="result__cta">RESET</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
