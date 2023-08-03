@@ -18,8 +18,8 @@ let person = "";
 // FUNCTIONS
 
 const resetCond = function () {
-  tipPerPerson.innerText = "$ 0.00";
-  billPerPerson.innerText = "$ 0.00";
+  tipPerPerson.innerText = "$0.00";
+  billPerPerson.innerText = "$0.00";
   tipCustom.value = "";
 };
 
@@ -33,8 +33,8 @@ const calculateTip = function (tip) {
   if (inputValue > 0 && person > 0) {
     const tipValuePerPerson = (tip / person).toFixed(2);
     const billValuePerPerson = ((inputValue + tip) / person).toFixed(2);
-    tipPerPerson.innerText = `$ ${tipValuePerPerson}`;
-    billPerPerson.innerText = `$ ${billValuePerPerson}`;
+    tipPerPerson.innerText = `$${tipValuePerPerson}`;
+    billPerPerson.innerText = `$${billValuePerPerson}`;
   } else if (inputValue > 0 && (isNaN(person) || person <= 0)) {
     noOfPpl.classList.add("error");
     message.classList.add("display");
